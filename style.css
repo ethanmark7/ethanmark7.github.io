@@ -54,7 +54,7 @@ body {
     cursor: pointer;
     margin-bottom: 2rem;
     font-size: 2rem;
-    opacity: .5;
+    opacity: .75;
 }
 
 .transparent-cover nav {
@@ -88,6 +88,14 @@ body {
     text-decoration: none;
 }
 
+.page-title {
+    text-transform: uppercase;
+    margin-top: 4rem;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
 .navigation-bar {
     display: flex;
     position: fixed;
@@ -99,13 +107,14 @@ body {
     width: 100vw;
     justify-content: space-between;
     align-items: center;
-    transition: top 0.1s ease-in-out;
+    transition: top 0.25s ease-in-out;
 }
 
 .navigation-bar h1 {
     text-transform: uppercase;
     margin-left: 1rem;
-    font-weight: 200;
+    font-size: 1.25rem;
+    font-weight: 300;
 }
 
 .navigation-bar.appear {
@@ -122,8 +131,57 @@ body {
     margin-right: 1rem;
 }
 
-.page-title {
-    margin-top: 4rem;
-    text-align: center;
-    font-weight: 400;
+.bottom-short-info-panel {
+    opacity: 0;
+    display: flex;
+    background: rgba(216, 216, 216, 0.2);
+    bottom: -10rem;
+    margin: auto;
+    width: 60vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom-short-info-panel h1 {
+    font-size: 1.2rem;
+    margin: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.bottom-bar {
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    height: 4rem;
+    bottom: -4rem;
+    left: 0;
+    background-color: rgba(41, 41, 41, 1);
+    transition: bottom 0.25s ease;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom-bar h1 {
+    color: white;
+    font-weight: 100;
+    font-size: 1rem;
+    margin-left: 1.7rem;
+}
+
+.bottom-bar .social-links {
+    display: flex;
+    margin-right: 1.7rem;
+    justify-content: space-between;
+    width: 18vw;
+}
+
+.bottom-bar.appear {
+    bottom: 0;
+}
+
+.bottom-bar .social-links .fab {
+    cursor: pointer;
+    color: white;
+    font-size: 1.35rem;
 }

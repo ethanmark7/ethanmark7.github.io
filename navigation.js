@@ -7,4 +7,10 @@ function scrollListener() {
     } else {
         document.querySelector('.navigation-bar').classList.remove('appear')
     }
+
+    if (rect.bottom > -550) {
+        document.querySelector('.bottom-bar').classList.remove('appear')
+    } else {
+        document.querySelector('.bottom-bar').classList.add('appear')
+    }
 }
