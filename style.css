@@ -38,7 +38,7 @@ body {
     width: 100vw;
     height: 100vh;
     background: rgba(255, 255, 255, .5);
-    transition: top 0.5s;
+    transition: top 0.4s ease;
 
     display: flex;
     flex-direction: column;
@@ -47,6 +47,7 @@ body {
 }
 
 .transparent-cover.open {
+    transition-duration: 0.5s;
     top: 0;
 }
 
