@@ -99,7 +99,7 @@ body {
     width: 100vw;
     justify-content: space-between;
     align-items: center;
-    transition: top 0.2s ease-in-out;
+    transition: top 0.1s ease-in-out;
 }
 
 .navigation-bar h1 {
@@ -109,6 +109,7 @@ body {
 }
 
 .navigation-bar.appear {
+    transition-duration: 0.4s;
     top: 0;
 }
 
@@ -121,3 +122,8 @@ body {
     margin-right: 1rem;
 }
 
+.page-title {
+    margin-top: 4rem;
+    text-align: center;
+    font-weight: 400;
+}
