@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Avenir Next';
+    margin: 0;
 }
 
 .main-title {
@@ -86,3 +87,37 @@ body {
     color: inherit;
     text-decoration: none;
 }
+
+.navigation-bar {
+    display: flex;
+    position: fixed;
+    box-shadow: 0 1px 4px grey;
+    background-color: white;
+    top: -4rem;
+    left: 0;
+    height: 4rem;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    transition: top 0.2s ease-in-out;
+}
+
+.navigation-bar h1 {
+    text-transform: uppercase;
+    margin-left: 1rem;
+    font-weight: 200;
+}
+
+.navigation-bar.appear {
+    top: 0;
+}
+
+.navigation-bar .fas.fa-bars {
+    height: 1rem;
+    position: fixed;
+    top: .5rem;
+    right: 0;
+    padding: 1rem;
+    margin-right: 1rem;
+}
+
