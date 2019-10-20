@@ -5,6 +5,11 @@ body {
     margin: 0;
 }
 
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
 .main-title {
     display: flex;
     justify-content: center; /*Align Horizontally*/
@@ -100,7 +105,6 @@ body {
 .navigation-bar {
     display: flex;
     position: fixed;
-    box-shadow: 0 1px 4px grey;
     background-color: white;
     top: -4rem;
     left: 0;
@@ -119,6 +123,7 @@ body {
 }
 
 .navigation-bar.appear {
+    box-shadow: 0 1px 4px grey;
     transition-duration: 0.4s;
     top: 0;
 }
@@ -154,8 +159,8 @@ body {
     display: flex;
     position: fixed;
     width: 100vw;
-    height: 4rem;
-    bottom: -4rem;
+    height: 3rem;
+    bottom: -3rem;
     left: 0;
     background-color: rgba(41, 41, 41, 1);
     transition: bottom 0.25s ease;
