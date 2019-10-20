@@ -186,3 +186,58 @@ body {
     color: white;
     font-size: 1.35rem;
 }
+
+.contact-form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+}
+
+.contact-form input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25vw;
+    height: 2rem;
+    
+    box-sizing: border-box;
+    background: transparent;
+    border: 1px solid black;
+
+    font-weight: 100;
+    padding-left: .3rem;
+
+    margin-bottom: .5rem;
+}
+
+.contact-form input:focus {
+    outline-width: 0;
+}
+
+textarea {resize: none;}
+
+.contact-form .message:focus {
+    outline-width: 0;
+}
+
+.contact-form .message {
+    width: 25vw;
+    height: 10rem;
+    
+    box-sizing: border-box;
+    background: transparent;
+    border: 1px solid black;
+
+    font-weight: 100;
+    padding-left: .3rem;
+    padding-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+.contact-form ::placeholder {
+    color: black;
+}
+
