@@ -25,7 +25,7 @@ body {
     width: .9em; /*em - Inherits*/
     height: .9em;
     position: absolute;
-    top: .5rem;
+    top: .6rem;
     right: 0;
     border-right: 1px solid black;
     border-top: 1px solid;
