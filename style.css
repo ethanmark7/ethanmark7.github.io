@@ -129,12 +129,29 @@ body {
 }
 
 .navigation-bar .fas.fa-bars {
-    height: 1rem;
     position: fixed;
     top: .5rem;
-    right: 0;
-    padding: 1rem;
-    margin-right: 1rem;
+    right: 1rem;
+    height: 1rem;
+    padding: 1rem 1rem 2rem 1rem;
+}
+
+.navigation-bar div {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: max-content;
+    right: 1rem;
+    padding: 0.5rem 0 1rem .5rem;
+}
+
+.navigation-bar div a {
+    text-align: right;
+    padding: .25rem;
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-weight: 300;
+    color: black;
 }
 
 .bottom-short-info-panel {
