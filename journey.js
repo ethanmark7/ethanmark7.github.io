@@ -1,5 +1,6 @@
 const firstYear = 2012
 const lastYear = 2019
+var previousYear = 0
 
 document.querySelector('.years-pannel').addEventListener('scroll', selectYearFromScroll)
 
@@ -18,8 +19,17 @@ function convertRemToPixels(rem) {
 }
 
 function selectYearFromScroll(event) {
-    console.log(2012 + event.target.scrollLeft/236)
-    getInstructions(Math.round(2012 + event.target.scrollLeft/236))
+    if (2012 + event.target.scrollLeft/236 == Math.round(2012 + event.target.scrollLeft/236)) {
+        console.log(previousYear)
+        if (previousYear != parseInt(2012 + event.target.scrollLeft/236)) {
+            //Clear the page
+            document.querySelector('.years-sections').innerHTML = ""
+            
+            //Add Sections
+            getInstructions(parseInt(2012 + event.target.scrollLeft/236))
+            previousYear = parseInt(2012 + event.target.scrollLeft/236)
+        }
+    }
 }
 
 async function getSection(sectionNumber, year, yearHTML) {

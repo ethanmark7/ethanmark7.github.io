@@ -1,7 +1,7 @@
 * { box-sizing: border-box; }
 
 body {
-    font-family: 'Raleway';
+    font-family: 'Lato';
     margin: 0;
 }
 
@@ -157,7 +157,7 @@ body {
     text-align: right;
     padding: .25rem;
     text-decoration: none;
-    font-family: 'Raleway';
+    font-family: 'Lato';
     font-weight: 300;
     color: black;
 }
