@@ -1,15 +1,5 @@
 window.addEventListener('scroll', scrollListener)
 
-function barDropDown() {
-    window.scrollTo({
-        left: 0,
-        top: 0,
-        behavior: 'smooth'
-    }) 
-    setTimeout(()=>document.querySelector('.transparent-cover').classList.add('open'), 150)
-    covered = true
-}
-
 function removeTransparentCover() {
     document.querySelector('.transparent-cover').classList.remove('open')   
     covered = false
