@@ -53,7 +53,7 @@ async function getInstructions(year) {
     getSection(1, year, '')
 } 
 
-async function createImageWithText(year, section, img, txt) {
+async function create_ImageWithText(year, section, img, txt) {
     var text = await fetch(`My Journey/${year}/section_${section}/text/${txt}.txt`).then(r=>r.text())
     return `<section class="imageWithText"><img src="My Journey/${year}/section_${section}/images/${img}.png"><p>${text}</p></section>`
 }
