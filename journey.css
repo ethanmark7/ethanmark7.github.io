@@ -39,13 +39,14 @@
 .years-sections .year-sections .imageWithText {
     display: flex;
     flex-direction: row;
+    padding: 1rem;
 }
 
 .years-sections .year-sections .imageWithText img {
     width: 20rem;
     height: 20rem;
-    object-fit: cover;
     flex-shrink: 0;
+    object-fit: cover;
 }
 
 .years-sections .year-sections .imageWithText p {
