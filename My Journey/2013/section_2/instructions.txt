@@ -1,2 +1,2 @@
-create_ImageWithText(2013, 1, 'a', 'a')
-create_ImageWithText(2013, 1, 'a', 'a')
+create_ImageWithText(2013, 2, 'a', 'a')
+create_ImageWithText(2013, 2, 'a', 'a')

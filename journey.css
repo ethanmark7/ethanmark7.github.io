@@ -39,7 +39,7 @@
 .years-sections .year-sections .imageWithText {
     display: flex;
     flex-direction: row;
-    padding: 1rem;
+    padding: .5rem 1rem;
 }
 
 .years-sections .year-sections .imageWithText img {
@@ -51,5 +51,6 @@
 
 .years-sections .year-sections .imageWithText p {
     margin: 0;
+    padding-left: 1rem;
     height: auto;
 }

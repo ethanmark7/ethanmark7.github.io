@@ -1,2 +1,3 @@
 create_ImageWithText(2012, 1, 'a', 'a')
 create_ImageWithText(2012, 1, 'b', 'b')
+create_ImageWithText(2012, 1, 'b', 'b')
