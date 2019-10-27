@@ -1,0 +1,146 @@
+.main-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /*Align Horizontally*/
+    align-items: center; /*Align Vertically*/
+    height: 100vh;
+    width: 100vw;
+}
+
+.main-title h1 {
+    cursor: pointer;
+    font-size: 3rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    position: relative;
+    margin: 0;
+}
+
+.main-title h1 div {
+    width: .9em; /*em - Inherits*/
+    height: .9em;
+    position: absolute;
+    top: .8rem;
+    right: 0;
+    border-right: 1px solid black;
+    border-top: 1px solid;
+}
+
+.main-title h4 {
+    font-weight: 300;
+    opacity: .75;
+    margin: 0;
+}
+
+.transparent-cover {
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, .5);
+    transition: top 0.4s ease;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.transparent-cover.open {
+    transition-duration: 0.5s;
+    top: 0;
+}
+
+.transparent-cover .fa-chevron-up {
+    cursor: pointer;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    opacity: .75;
+}
+
+.transparent-cover nav {
+    width: 100vw;
+    display: flex;
+}
+
+.transparent-cover nav a:first-child {
+    margin-left: 1rem;
+}
+
+.transparent-cover nav a:last-child {
+    margin-left: auto;
+    margin-right: 1rem;
+}
+
+.transparent-cover nav a {
+    margin-top: 1rem;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 200;
+    padding: .5rem 1rem;
+
+    /*to override button presets*/
+    outline: none !important;
+    background: transparent;
+    border: none;
+
+    /*to override a presets*/
+    color: inherit;
+    text-decoration: none;
+}
+
+.about-me {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    top: 100vh;
+    background: black;
+}
+
+.about-me .background-circle {
+    position: absolute;
+    left: 10rem;
+    height: 30rem;
+    width: 30rem;
+    border-radius: 50%;
+    background: white;
+    text-align: center;
+    overflow: hidden;
+    border: 5px solid white;
+}
+
+.about-me .photo-of-self {
+    display: inline-block;
+    vertical-align: middle;
+    height: 150%;
+}
+
+.about-me .info-box {
+    position: absolute;
+    right: 0;
+    top: 133%;
+    width: 40%;
+    height: 20rem;
+    margin-right: 10rem;
+    border-top: 3px solid white;
+    color: whitesmoke;
+}
+
+.about-me .info-box h1 {
+    position: absolute;
+    margin: 0;
+    top: -3rem;
+    left: 0;
+    font-weight: 100;
+    color: whitesmoke;
+}
+
+.about-me .info-box p {
+    position: absolute;
+    margin: .3rem 0 0 0;
+    font-weight: 300;
+    color: white;
+    text-align: justify;
+}

@@ -1,3 +1,0 @@
-title = "something awesome"
-startDate = new Date("7/4/2012") 
-endDate = new Date("10/5/2012")

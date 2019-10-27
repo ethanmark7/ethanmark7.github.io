@@ -29,8 +29,8 @@ function selectYearFromScroll(event) {
     if (2012 + event.target.scrollLeft/236 == Math.round(2012 + event.target.scrollLeft/236)) {
         console.log(previousYear)
         if (previousYear != parseInt(2012 + event.target.scrollLeft/236)) {
-            //Clear the page
-            document.querySelector('.years-sections').innerHTML = ""
+            //Hide the previous page
+            document.querySelector('.years-sections').innerHTML = null
             
             //Add Sections
             getInstructions(parseInt(2012 + event.target.scrollLeft/236))
@@ -52,7 +52,7 @@ async function getSection(sectionNumber, year, yearHTML) {
     })
     console.log(instructions)
     if (instructions) {
-        eval('(async function(){ yearHTML +=await ' + instructions.split('\n').join('+ await ') + '; getSection(sectionNumber+1, year, yearHTML)})()')
+        eval('(async function(){ yearHTML +=await ' + instructions.split('\n').filter(x=>x).join('+ await ') + '; getSection(sectionNumber+1, year, yearHTML)})()')
     } else {
         document.querySelector('.years-sections').innerHTML += `<section class="year-sections" id="${year}">
         ${yearHTML}</section>`
@@ -64,6 +64,3 @@ async function create_ImageWithText(year, section, img, txt) {
     var text = await fetch(`My Journey/${year}/section_${section}/text/${txt}.txt`).then(r=>r.text())
     return `<section class="imageWithText"><img src="My Journey/${year}/section_${section}/images/${img}.png"><p>${text}</p></section>`
 }
-
-
-//create_Paragraph(2016, 1, 'a')
