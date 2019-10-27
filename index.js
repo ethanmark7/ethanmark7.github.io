@@ -21,6 +21,5 @@ function scrollListener() {
     const rect = document.querySelector('.main-title').getBoundingClientRect()
     if (rect.top < -50 && covered) {
         removeTransparentCover()
-        console.log("removed")
     }
 }
