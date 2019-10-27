@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center; /*Align Horizontally*/
     align-items: center; /*Align Vertically*/
+    padding: 10rem;
     height: 100vh;
     width: 100vw;
 }
@@ -14,22 +15,25 @@
     text-transform: uppercase;
     position: relative;
     margin: 0;
+    padding: 3rem 3rem 0 3rem;
 }
 
 .main-title h1 div {
     width: .9em; /*em - Inherits*/
     height: .9em;
     position: absolute;
-    top: .8rem;
-    right: 0;
+    top: 3.8rem;
+    right: 3rem;
     border-right: 1px solid black;
     border-top: 1px solid;
 }
 
 .main-title h4 {
+    cursor: pointer;
     font-weight: 300;
     opacity: .75;
     margin: 0;
+    padding: 0 6rem 3rem 6rem;
 }
 
 .transparent-cover {
