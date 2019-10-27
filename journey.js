@@ -6,7 +6,7 @@ var previousYear = 0
 document.querySelector('.years-pannel').addEventListener('scroll', selectYearFromScroll)
 
 //Load the 'before' space
-document.querySelector('.years-pannel').innerHTML += `<div style="width: calc(50vw - 7.75rem); background: red;"></div>`
+document.querySelector('.years-pannel').innerHTML += `<div style="width: calc(50vw - 7.75rem); background: white;"></div>`
 
 //Load the images
 for (let year = firstYear; year <= lastYear; year++) {
@@ -14,7 +14,7 @@ for (let year = firstYear; year <= lastYear; year++) {
 }
 
 //Load the 'after' space
-document.querySelector('.years-pannel').innerHTML += `<div style="width: calc(50vw - 7.75rem); background: red;"></div>`
+document.querySelector('.years-pannel').innerHTML += `<div style="width: calc(50vw - 7.75rem); background: white;"></div>`
 
 //Center the scroller
 document.querySelector('.years-pannel').scrollTo({left: ((lastYear-firstYear)*convertRemToPixels(14.75)/2) + convertRemToPixels(.75)})
