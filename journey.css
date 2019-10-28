@@ -37,6 +37,26 @@
     background: black;
 }
 
+.quick-access-bar {
+    display: flex;
+    width: 80vw;
+    height: 3rem;
+    background: gray;
+    margin: auto;
+    align-items: center;
+}
+
+.quick-access-bar .title {
+    padding-left: 1rem;
+    font-weight: 400;
+}
+
+.quick-access-bar .date {
+    padding-right: 1rem;
+    margin-left: auto;
+    font-weight: 100;
+}
+
 .years-sections .year-sections .imageWithText {
     display: flex;
     flex-direction: row;
