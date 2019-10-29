@@ -37,7 +37,10 @@ function selectYearFromScroll(event) {
     if (2012 + event.target.scrollLeft/236 == Math.round(2012 + event.target.scrollLeft/236)) {
         if (previousYear != parseInt(2012 + event.target.scrollLeft/236)) {
             //Hide the previous page
-            document.querySelector('.years-sections').innerHTML = null
+            // document.querySelector('.years-sections').innerHTML = null
+            console.log(document.getElementById("2012"))
+            document.getElementById(`${year}x`).classList.add("hidden")
+            
             
             //Add Sections
             getInstructions(parseInt(2012 + event.target.scrollLeft/236))
@@ -60,7 +63,7 @@ async function getSection(sectionNumber, year, yearHTML) {
     if (instructions) {
         eval('(async function(){ yearHTML +=await ' + instructions.split('\n').filter(x=>x).join('+ await ') + '; getSection(sectionNumber+1, year, yearHTML)})()')
     } else {
-        document.querySelector('.years-sections').innerHTML += `<section class="year-sections" id="${year}">
+        document.querySelector('.years-sections').innerHTML += `<section class="year-sections" id="${year}x">
         ${yearHTML}</section>`
     }
     return 

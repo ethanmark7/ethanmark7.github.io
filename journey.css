@@ -76,3 +76,6 @@
     height: auto;
 }
 
+.hidden {
+    background: red;
+}
