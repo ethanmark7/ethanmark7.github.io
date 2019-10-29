@@ -37,10 +37,10 @@ function selectYearFromScroll(event) {
     if (2012 + event.target.scrollLeft/236 == Math.round(2012 + event.target.scrollLeft/236)) {
         if (previousYear != parseInt(2012 + event.target.scrollLeft/236)) {
             //Hide the previous page
-            // document.querySelector('.years-sections').innerHTML = null
-            console.log(document.getElementById("2012"))
-            document.getElementById(`${year}x`).classList.add("hidden")
-            
+            document.querySelector('.years-sections').innerHTML = null
+            // Add the hidden class to the element with the year id to hide the blocks from that year rather than remove everything
+            // console.log(document.getElementById("2012"))
+            // document.getElementById(`${year}x`).classList.add("hidden")
             
             //Add Sections
             getInstructions(parseInt(2012 + event.target.scrollLeft/236))
